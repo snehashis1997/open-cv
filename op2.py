@@ -1,17 +1,18 @@
+#import library 
 import matplotlib.pyplot as plt 
 import cv2
 import time
 import numpy as np
 
+#import image 
 path1='C:\\Users\\user\\Desktop\\python image\\i1.jpg'
 path2='C:\\Users\\user\\Desktop\\python image\\i2.jpg'
 
 i1=cv2.imread(path1)
 i2=cv2.imread(path2)
-#i3=cv2.imread(i3)
 i1=cv2.resize(i1,(500,500))
 i2=cv2.resize(i2,(500,500))
-img=[i1,i2]
+
 for i in np.linspace(0,1,100):
 	alpha=i
 	beta=1-alpha
